@@ -13,7 +13,7 @@ $URL    = $_REQUEST['url']      ?? die('url is not set');
 
 # -------------------------------------- #
 
-$connection = new mysqli('localhost', $DBuser, $DBpass, $DBname);
+$connection = new mysqli('mysql1.serv00.com', $DBuser, $DBpass, $DBname);
 
 if($connection->connect_error){
     exit("error " . $connection->connect_error);  
