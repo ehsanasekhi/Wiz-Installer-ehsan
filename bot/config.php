@@ -4,7 +4,7 @@ include_once "settings/values.php";
 include_once 'settings/jdf.php';
 include_once 'baseInfo.php';
 
-$connection = new mysqli('localhost',$dbUserName,$dbPassword,$dbName);
+$connection = new mysqli('mysql1.serv00.com',$dbUserName,$dbPassword,$dbName);
 if($connection->connect_error){
     exit("error " . $connection->connect_error);  
 }
